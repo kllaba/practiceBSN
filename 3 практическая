@@ -1,0 +1,51 @@
+#def find_string(string_list,target_string):
+#    if target_string in string_list:
+#        index = string_list.index(target_string)
+#        print(f"строка '{target_string}' найдена, индекс:{index}")
+#    else:
+#        print(f"строка '{target_string}'отсутствует в списке")
+#
+#idk = ['уголь',"алмаз","деревня"]
+#find_string(idk,"уголь")
+
+
+
+#2 номер
+#def remove(input_list):
+#    return list(dict.fromkeys(input_list))
+#
+#list_duplicates = [1,1,1,2,3,4,5,6,6,3]
+#unique_list = remove(list_duplicates)
+#print(f'список с дубликатами:{list_duplicates}')
+#print(f'список без дубликатов:{unique_list}')
+
+
+#3 номер
+
+#def zxc(input_list):
+#    counts = {}
+#    for item in input_list:
+#        counts[item] = counts.get(item, 0) + 1
+#    return counts#
+#
+#qwe = ['уголь', "железо", "золото","золото","золото",]
+#repetition_list = zxc(qwe)
+#print(f'исходный список:{qwe}')
+#print(f'количество повторений:{repetition_list}')
+
+
+
+#4 номер
+
+#def delete_min(input_list):
+#    if not input_list:
+#        print('список пуст')
+#        return input_list
+#    min_value = min(input_list)
+#    input_list.remove(min_value)
+#    return input_list#
+#
+#numbers = [2,6,10,15,4,7,0]
+#print(f'исходный список: {numbers}')
+#result = delete_min(numbers)
+#print(f'список после удаления минимального числа: {result}')
