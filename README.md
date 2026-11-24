@@ -1,1 +1,69 @@
-# practiceBSN
+#2 практическая
+#employed = input('вы в отпуске? да/нет:')
+#vacation = input('вы трулоустроены? да/нет:')
+#alarm = employed and not vacation
+#print(alarm)
+
+
+
+#2 номер
+#operation = str(input('введите вашу операцию:'))
+#value_1 = int(input('введите первое число:'))
+#value_2 = int(input('введите второе число:'))
+#if operation == '+':
+#    res = value_1 + value_2
+#elif operation == '-':
+#    res = value_1 - value_2
+#elif operation == '*':
+#    res = value_1 * value_2
+#elif operation == '/':
+#    res = value_1 / value_2
+#print(res)
+
+
+
+
+# 3 номер
+#x = int(input('ведите 1 число:'))
+#y = int(input('введите 2 число:'))
+#def sum(x,y):
+#    r = min(x,y)
+#    t = max(x,y)
+#    summa = 0
+#    for i in range(r , t+ 1):
+#        summa += i
+#    return summa
+#print(sum(x,y))
+
+#4 номер
+#month = int(input('введите номер месяца:'))
+#if month < 3 or month == 12:
+#    print('ваш месяц относится к 1 кварталу, сезон зима')
+#if 3<=month<=5:
+#    print('ваш месяц относится к 2 кварталу, сезон весна')
+#if 6 <= month <= 8:
+#    print('ваш месяц относится к 3 кварталу, сезон лето')
+#if 9 <= month <= 11:
+#    print('ваш месяц относится к 4 кварталу, сезон осень')
+
+
+#номер 5
+#total = 0
+#count = 0
+#while True:
+#    grade = int(input('введите оценки, для завершения ввода введите -1:'))
+#    if grade == -1:
+#        break
+#    total += grade
+#    count += 1
+#average = total / count
+#if average >= 90:
+#    print('A')
+#if 80<=average<=89:
+#    print('B')
+#if 70<=average<=79:
+#    print('C')
+#if 60<=average<=69:
+#    print('D')
+#if average < 60:
+#    print('F')
