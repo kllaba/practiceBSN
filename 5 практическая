@@ -1,0 +1,44 @@
+class Student:
+
+    def __init__(self, name, group, grades, tel_number):
+        self.name = name
+        self.group = group
+        self.grades = list(grades)
+        self.__tel_number = tel_number
+
+    def add_grade(self, grade):
+        if not isinstance(grade, (int, float)) or isinstance(grade, bool):
+            raise TypeError("Оценка должна быть числом")
+        if not 1 <= grade <= 5:
+            raise ValueError("Оценка должна быть от 1 до 5")
+        self.grades.append(grade)
+
+    def get_average(self):
+        if not self.grades:
+            return 0
+        return sum(self.grades) / len(self.grades)
+
+    def info(self):
+        return (
+            f"Студент: {self.name}\n"
+            f"Группа: {self.group}\n"
+            f"Оценки: {self.grades}\n"
+            f"Средний балл: {self.get_average():.2f}\n"
+            f"Телефон: {self.__tel_number}"
+        )
+
+
+if __name__ == "__main__":
+    student1 = Student("Анна", "36-64", [5, 3, 4], "+7 999 888-88-88")
+    student2 = Student("Сергей", "36-64", [3, 5, 4], "+7 777 666-66-66")
+    student3 = Student("Мария", "36-64", [4, 2, 4], "+7 555 444-44-44")
+    student4 = Student('Иван', '36-64', [5, 4, 4], '+7 333 222-22-22')
+
+    student1.add_grade(3)
+    student2.add_grade(5)
+    student3.add_grade(3)
+    student4.add_grade(2)
+
+    for student in (student1, student2, student3, student4):
+        print(student.info())
+        print("-" * 30)
